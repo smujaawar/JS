@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #userform{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+    </style>
+  </head>
+  
+  <body>
+
+    <form id="userform" action="">
+
+      <label id="name" for="" >Name</label>
+      <input type="text" required />
+
+      <label id="phone" for="">Phone</label>
+      <input type="number" required/>
+
+      <label id="email" for="">Email</label>
+      <input type="text" required/>
+
+      <label id="address" for="">Address</label>
+      <textarea name="" id="" required></textarea>
+
+      <label id="pin" for="">Pin</label>
+      <input type="number" required/>
+
+      <button style="background-color: rgb(104, 244, 104);" type="submit">Submit</button>
+
+    </form>
+
+
+    <script>
+
+const form = document.getElementById('userform');   //declare variable to store id and use further 
+
+form.addEventListener('submit')
+
+const name = document.getElementById('name').value.trim();  //trim removes the extra spaces from the input 
+const phone = document.getElementById('phone').value.trim();
+const email = document.getElementById('email').value.trim();
+
+const address = document.getElementById('address').value.trim();
+const pin = document.getElementById('pin').value.trim();
+
+//Validation
+ 
+if(!name){
+    alert('Name cannot be empty!');
+    return;
+}
+
+if(phone.length!==10 || isNaN(phone)){
+    alert('phone number must be excatly 10 digits!');
+    return;
+}
+
+if(!email.includes('@')){
+    alert('Enter a valid email!');
+    return;
+}
+if(address.length>100){
+    alert('Address cannot exceed 100 characters!');
+    return;
+}
+if(pin.length!==6 || isNaN(pin)){
+    alert('Pin must be excatly 6 digits')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

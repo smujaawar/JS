@@ -53,8 +53,16 @@
 // 4. Find and return the largest number in an array.
 
 // var arr =[43,56,64,75,66];
-// var largest =arr.reduce((acc,next)=>arr>next?acc:next);
+// var largest =arr.reduce((acc,next)=> arr>next ? acc : next );
 // console.log(largest);
+
+
+// var arr = [14,45,58,46,9,54]
+
+// var largest = arr.reduce((acc,next) => acc>next ? acc : next);
+// console.log(largest);
+
+
 
 // *****************************************************************************************
 // *****************************************************************************************
@@ -193,3 +201,62 @@
 
 // *****************************************************************************************
 // *****************************************************************************************
+
+
+
+// let str = "hello good morning"
+
+// let arr = str.split(' ');
+// let largest = arr.reduce ((acc,next)=> {
+//     return acc.length > next.length ? acc :next;
+// })
+
+// console.log(largest);
+
+
+// let str = "hello good morning and goodnight"
+
+// let arr = str.split(' ')
+
+// let largest = arr.reduce((acc,next)=>{
+//     return acc.length > next.length ? acc :next;
+// })
+//  console.log(largest);
+
+
+
+// 6. Reverse the digits of a given integer while maintaining the sign.
+// let num = -234;
+// let str= num.toString();
+// let reverse="";
+// for(let i = str.length-1;i >=0;i--){
+//     reverse+= str.charAt(i);
+// }
+// console.log(reverse);
+
+
+// let num = -254;
+// let str = num.toString();
+// let reverse ="";
+// for(let i = str.length-1; i>=0; i--){
+//     reverse+= str.charAt(i);
+// }
+ 
+// console.log(reverse);
+
+
+
+// 12. Find the missing number in a sequence of integers from 1 to n, where one number is missing.
+
+// let arr =[1,3,4,5,6,7];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i+1]-arr[i]!==1) {
+//     console.log("missing number is ",arr[i]+1," at ",i+1," index");
+//     break;
+//   }
+// }
+
+
+
+
+ 
